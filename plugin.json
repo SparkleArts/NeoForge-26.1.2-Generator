@@ -1,0 +1,14 @@
+{
+  "id": "generator-26.1.x",
+  "supportedversions": [
+    2026003,
+    202600344621
+  ],
+  "weight": 0,
+  "info": {
+    "name": "Minecraft 26.1.x Java Edition generator",
+    "version": "1.0",
+    "description": "NeoForge 26.1.2, data pack and resource pack 26.1.x generators from the second 2026.3 snapshot, ported to the third snapshot (base types are declared in the element definitions, the types template variable holds element lists).",
+    "author": "SparkleArts (generator from MCreator)"
+  }
+}
