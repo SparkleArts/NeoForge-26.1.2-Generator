@@ -1,0 +1,45 @@
+NeoForge 26.1.2 Generator (plugin for MCreator 2026.3)
+
+This plugin is a modified copy of the Minecraft 26.1.x Java Edition generators
+(NeoForge 26.1.2, data pack and resource pack) that were part of MCreator
+2026.3 up to the second snapshot. It is not an official MCreator product and
+has no connection to Pylo.
+
+Original work: MCreator (https://mcreator.net/)
+Copyright (C) 2012-2020, Pylo
+Copyright (C) 2020-2026, Pylo, opensource contributors
+
+MCreator is licensed under the GPL-3.0 license (with exceptions implemented
+as specified in section 7 of GPL-3.0) if not otherwise stated in the source
+files or other files of the project. This plugin is distributed under the
+same terms: GNU General Public License, version 3 or (at your option) any
+later version (see LICENSE).
+
+Some files (especially *.ftl templates) may not contain the license header,
+but this does not mean they are not covered by this license.
+
+MCreator is a trademark of Pylo. This is a custom distribution and a variant
+of the original MCreator project; it does not include the MCreator name or
+logo as its own branding.
+
+Some code generators use official Minecraft mappings. The use of these
+mappings is covered under a license by Microsoft. You should be fully aware
+of this license and the fact your mod may use these mappings.
+
+Additional permission for code generator templates (*.ftl files)
+
+As a special exception, you may create a larger work that contains part or
+all of the MCreator code generator templates (*.ftl files) and distribute
+that work under terms of your choice, so long as that work isn't itself a
+template for code generation. Alternatively, if you modify or redistribute
+the template itself, you may (at your option) remove this special exception,
+which will cause the template and the resulting code generator output files
+to be licensed under the GNU General Public License without this special
+exception.
+
+Changes made by SparkleArts for MCreator 2026.3 snapshot 3 (build 44621)
+- plugin.json: id, supported versions and info for use as a separate plugin
+- every mod element definition in neoforge-26.1.2 declares its base types
+  (base_types) instead of the MCreator core Java code
+- neoforge-26.1.2/templates/modbase/mod.java.ftl: the types template variable
+  now maps names to lists of elements
