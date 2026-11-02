@@ -1,8 +1,13 @@
+<#-- A fragment can hold several mixin names, one per line -->
 <#assign mixins = []>
-<#if w.getGElementsOfType('biome')?filter(e -> e.spawnBiome || e.spawnInCaves || e.spawnBiomeNether)?size != 0>
-  <#assign mixins = mixins + ['NoiseGeneratorSettingsMixin', 'BiomeSourcePresetMixin', 'LevelStorageSourceMixin']>
-</#if>
-
+<#list fragments.mixin as fragment>
+  <#list fragment?split("\n") as line>
+    <#assign mixinName = line?trim>
+    <#if mixinName?has_content && !mixins?seq_contains(mixinName)>
+      <#assign mixins = mixins + [mixinName]>
+    </#if>
+  </#list>
+</#list>
 {
   "required": true,
   "package": "${package}.mixin",

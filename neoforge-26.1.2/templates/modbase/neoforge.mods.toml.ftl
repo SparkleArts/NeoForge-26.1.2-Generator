@@ -34,7 +34,7 @@ enumExtensions="META-INF/enumextensions.json"
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-<#if w.getGElementsOfType('biome')?filter(e -> e.spawnBiome || e.spawnInCaves || e.spawnBiomeNether)?size != 0>
+<#if fragments.mixin?has_content>
 [[mixins]]
     config = "${settings.getModID()}.mixins.json"
 </#if>
